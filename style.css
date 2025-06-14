@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100vw;
+    height: 10vh;
+    background-color: antiquewhite;
+}
+main{
+    width: 100vw;
+    height: 200vh;
+    background-color: bisque;
+}
+footer{
+    width: 100vw;
+    height: 5vh;
+    background-color: aquamarine;
+    position: relative;
+    bottom: 0;
+}
