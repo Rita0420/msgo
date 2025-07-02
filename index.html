@@ -1,14 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MSGO 謎書狗密室逃脫工作室</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.7/css/bootstrap.min.css"
+        integrity="sha512-fw7f+TcMjTb7bpbLJZlP8g2Y4XcCyFZW8uy8HsRZsH/SwbMw0plKHFHr99DN3l04VsYNwvzicUX/6qurvIxbxw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <!-- header -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top fairy-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#">MSGO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- 漢堡選單 -->
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <div class="navbar-nav ms-auto">
+                    <div class="nav-item">
+                        <a class="nav-link" href="#bean">謎豆</a>
+                    </div>
+                    <div class="nav-item">
+                        <a class="nav-link" href="#dragon">龍劫</a>
+                    </div>
+                    <div class="nav-item">
+                        <a class="nav-link" href="#cow">牛頭村</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- header end -->
+    <!-- 輪播區 news -->
+    <div class="container news">
+        <div class="row">
+            <div class="col">
+                <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+                    <!-- Indicators/dots -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                    </div>
+
+                    <!-- The slideshow/carousel -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./img/01.png" alt="Los Angeles" class="d-block">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/02.png" alt="Chicago" class="d-block">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/03.png" alt="New York" class="d-block">
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls/icons -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- 輪播區 news end-->
+    <!-- 迷豆 -->
+    <div id="bean"></div>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-12 col-sm-6">
+                <div class="box bean">
+                    <div>
+                        <img src="./img/bean/01.png" alt="">
+                    </div>
+                    <div>
+                        <button class="fairy-button mt-3">預約</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6">
+                <div class="box bean">
+                    <h4>修書人系列</h4>
+                    <h6>木之章【迷豆】</h6>
+                    <p class="mt-3">
+                        遊戲時間：約90分鐘 (含解說30分鐘)<br>
+
+                        遊戲人數：2-6人<br>
+
+                        遊戲內容：<br>
+                        『偉大的修書人啊，拜託快幫幫我！這顆神奇的豆子就交給你了，進入我的世界將書本修復，不然等到巨人入侵童話村，童話世界就要完蛋了!! BY 傑克』<br>
+
+                        看來...發生很嚴重的事了！<br>
+                        身為修書人的您，能化解童話村的危機嗎？<br>
+                        書中世界的命運就交付在你們手上了!<br>
+
+                        收費金額 550/人NTD<br>
+
+                        親子票 850/組(1大1小)NTD<br>
+
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 迷豆 end-->
+    <!-- 龍劫 -->
+     <div id="dragon"></div>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-12 col-sm-6">
+                <div class="box dragon">
+                    <h4>修書人系列</h4>
+                    <h6>水之章【龍劫】</h6>
+                    <p class="mt-3">
+                        遊戲時間：約90分鐘 (含解說30分鐘)<br>
+
+                        遊戲人數：3-8人<br>
+                        遊戲內容：<br> 『修書人們，快點到海底世界來吧！我的時間不多了， 這裡發生很嚴重的事需要你們協助，再繼續等待下去，我就要消失在你們的記憶中了... BY 敖廣』<br>
+
+                        看來...發生很嚴重的事了!<br>
+                        身為修書人的您，能化解童話村的危機嗎？<br>
+                        書中世界的命運就交付在你們手上了!<br>
+                        收費金額 600/人NTD<br>
+                        親子票 1000/組(1大1小)NTD<br>
+                        多人票 7人 550/人NTD 8人 500/人NTD<br></p>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6">
+                <div class="box dragon">
+                    <div>
+                        <img src="./img/dragon/01.png" alt="">
+                    </div>
+                    <div>
+                        <button class="epic-button mt-3">預約</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- 龍劫 end-->
+    <!-- 牛頭村 -->
+    <div id="cow"></div>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col">
+                <div class="box cow">
+                    <iframe width="100%" height="100%"
+                        src="https://www.youtube.com/embed/cJ_b7cyEEJE?si=TQYfcECmIm8-zrdA" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-12 col-sm-6">
+                <div class="box cow">
+                    <div>
+                        <img src="./img/cow/01.jpeg" alt="">
+                    </div>
+                     <div>
+                        <button class="horror-button mt-3">預約</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6">
+                <div class="box cow">
+                    <h4>遊戲特色</h4>
+
+                    <h6 class="text-center mt-3">🔴恐怖氛圍 🔴還原落後村莊 🔴真人演繹<br>
+
+                        🔴黑暗追逐 🔴謎題少量輕鬆 🔴單線任務挑戰極限
+
+                        🔴生命機制</h6>
+
+
+
+                    <p class="mt-5">
+                        遊戲人數：6-10人。(最佳體驗人數：6人)<br>
+                        遊戲時間：75分鐘。(含解說介紹100分鐘)<br>
+                        遊戲地點：台北市信義區松仁路230號<br>
+                        (手機配件行前集合)。<br>
+                        遊戲票價：900元起。<br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 牛頭村 end -->
+     <!-- <div class="top col-2 col-sm-1 col-lg-1">
+        <a href="#"><img src="./img/mark_arrow_up.png" alt="" class="img-fluid topImg" ></a>
+     </div> -->
+    <!-- 好評推薦 -->
+    <!-- 好評推薦 end -->
+    <!-- footer -->
+    <!-- footer end-->
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.7/js/bootstrap.min.js"
+        integrity="sha512-zKeerWHHuP3ar7kX2WKBSENzb+GJytFSBL6HrR2nPSR1kOX1qjm+oHooQtbDpDBSITgyl7QXZApvDfDWvKjkUw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        $(document).ready(function () {
+
+
+        });
+    </script>
 </body>
+
 </html>

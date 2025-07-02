@@ -1,21 +1,279 @@
-*{
-    margin: 0;
-    box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+/* ===== 基礎樣式 ===== */
+* {
+  margin: 0;
 }
-header{
-    width: 100vw;
-    height: 10vh;
-    background-color: antiquewhite;
+
+body {
+  background: linear-gradient(to bottom,
+    #fff0f5 0%,      /* 上方童話粉 */
+    #e1f7ff 20%,     /* 天空藍 */
+    #ffe8cc 40%,     /* 冒險暖黃 */
+    #4b2c5e 65%,     /* 龍劫魔幻紫 */
+    #1a0a0a 80%,     /* 牛頭村黑紅 */
+    #000000 100%);   /* 最底部黑 */
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  color: #4b2c5e;
 }
-main{
-    width: 100vw;
-    height: 200vh;
-    background-color: bisque;
+
+/* ===== 結構區塊樣式 ===== */
+
+.news {
+  margin-top: 10vh;
 }
-footer{
-    width: 100vw;
-    height: 5vh;
-    background-color: aquamarine;
-    position: relative;
-    bottom: 0;
+
+#demo {
+  max-width: 50vw;
+  margin: auto;
+}
+
+#demo .carousel-item img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.d-block {
+  margin: auto;
+}
+
+/* ===== 通用 box 樣式 ===== */
+.box {
+  width: 100%;
+  height: 55vh;
+  background: rgba(255, 255, 255, 0.7);
+  border: 4px dashed #dab6ff;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 0 20px #a0e0ff;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 25px #ffe2fd;
+}
+
+/* ===== 共同圖片樣式 ===== */
+.bean img,
+.dragon img
+ {
+  width: 100%;
+  border-radius: 15px;
+}
+
+/* ===== 主題圖片額外風格 ===== */
+.bean img,
+.dragon img {
+  box-shadow: 0 0 15px #c1f4ff;
+}
+
+.cow img {
+  max-height: 38vh;
+  filter: grayscale(70%) contrast(120%);
+  box-shadow: 0 0 10px red;
+  transition: transform 0.4s ease;
+}
+
+.cow img:hover {
+  transform: scale(1.05) rotate(-1deg);
+}
+
+/* ===== 標題與段落基礎樣式 ===== */
+h2, h3 {
+  text-align: center;
+  margin: 20px 0 10px;
+}
+
+p {
+  padding: 12px 16px;
+  margin: 10px auto;
+  max-width: 80%;
+  line-height: 1.8;
+  border-radius: 12px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* ============ 1. Bean：童話森林風格 ============ */
+.bean h4, .bean h6 {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  color: #3b7d5d;
+  text-shadow: 1px 1px 2px #b8fcd7;
+}
+
+.bean p {
+  background: rgba(233, 255, 240, 0.7);
+  color: #2b4f3f;
+  box-shadow: 0 0 10px #c0ffe6;
+  font-size: 1rem;
+}
+
+/* ============ 2. Dragon：史詩冒險風格 ============ */
+.dragon h4, .dragon h6 {
+  font-family: 'Georgia', serif;
+  color: #b34700;
+  text-shadow: 2px 2px 4px #ffa726;
+}
+
+.dragon p {
+  background: linear-gradient(90deg, #fff3e0, #ffe0b2);
+  color: #5e2c00;
+  border-left: 6px solid #ff7043;
+  box-shadow: 0 0 15px #ffb74d;
+  font-size: 1rem;
+}
+
+/* ============ 3. Cow：詭異恐怖風格 ============ */
+.cow {
+  background: linear-gradient(to bottom, #1a1a1a, #000);
+  color: #f8dcdc;
+  border: 2px solid #aa0000;
+  border-radius: 10px;
+  box-shadow: 0 0 20px red;
+  font-family: 'Courier New', monospace;
+  padding: 20px;
+  position: relative;
+}
+
+.cow::before {
+  content: " ";
+  font-size: 1.5rem;
+  color: #ff0000;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.cow h4, .cow h6 {
+  font-family: 'Creepster', cursive;
+  color: #ff4b4b;
+  text-shadow: 2px 2px 5px #000;
+}
+
+.cow p {
+  font-family: 'Courier New', monospace;
+  background: rgba(0, 0, 0, 0.7);
+  color: #ffe5e5;
+  border-left: 5px solid #aa0000;
+  box-shadow: 0 0 15px red;
+  font-size: 1.05rem;
+}
+
+.cow p:hover {
+  background: rgba(30, 0, 0, 0.8);
+}
+
+/* ===== 若整個容器要恐怖風格，可套用 .horror ===== */
+.horror {
+  background-color: #000000;
+  color: #e8e8e8;
+}
+img.fancy-border {
+  border: 8px double #fff4f4;
+  border-radius: 20px;
+  padding: 8px;
+  background: linear-gradient(145deg, #ffe3f4, #dff6ff);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+  transition: all 0.3s ease-in-out;
+}
+
+img.fancy-border:hover {
+  transform: scale(1.03) rotate(-1deg);
+  box-shadow: 0 0 25px #ffc2e2;
+}
+
+.fairy-button {
+  background: linear-gradient(135deg, #ffc3f7, #b8f0ff);
+  border: 2px solid #dab6ff;
+  border-radius: 25px;
+  color: #4b2c5e;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  padding: 10px 25px;
+  box-shadow: 0 0 10px #a0e0ff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-shadow: 0 0 3px #fff;
+}
+
+.fairy-button:hover {
+  background: linear-gradient(135deg, #ffe2fd, #c1f4ff);
+  box-shadow: 0 0 20px #ffb8ff;
+  transform: scale(1.05);
+  color: #36194e;
+}
+
+.epic-button {
+  background: linear-gradient(90deg, #ff7043, #b34700);
+  border: none;
+  border-radius: 12px;
+  color: #fff3e0;
+  font-family: 'Georgia', serif;
+  padding: 12px 30px;
+  box-shadow: 0 0 15px #ffb74d;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+  text-shadow: 1px 1px 2px #5e2c00;
+}
+
+.epic-button:hover {
+  background: linear-gradient(90deg, #ffa726, #b36000);
+  box-shadow: 0 0 25px #ffcc80;
+  transform: scale(1.07);
+}
+
+.horror-button {
+  background: #330000;
+  border: 2px solid #aa0000;
+  border-radius: 8px;
+  color: #ff4b4b;
+  font-family: 'Courier New', monospace;
+  padding: 10px 25px;
+  box-shadow: 0 0 15px red;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-shadow: 2px 2px 5px #000;
+}
+
+.horror-button:hover {
+  background: #550000;
+  box-shadow: 0 0 25px #ff0000;
+  transform: scale(1.05) rotate(-2deg);
+  color: #fff0f0;
+}
+
+#demo {
+  max-width: 50vw;
+  margin: auto;
+  border: 8px double #e6ccff;
+  border-radius: 25px;
+  padding: 10px;
+  box-shadow: 0 0 20px rgba(200, 220, 255, 0.7), inset 0 0 8px #ffffffaa;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.4), rgba(240, 240, 255, 0.6));
+  backdrop-filter: blur(4px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#demo:hover {
+  transform: scale(1.01);
+  box-shadow: 0 0 25px rgba(255, 200, 250, 0.9), inset 0 0 10px #fff;
+}
+
+#demo .carousel-item img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(180, 220, 255, 0.8);
+}
+.top{
+    /* max-width: 3vw; */
+    /* background-color: yellow; */
+    position:fixed;
+    bottom: 3vw;
+    right: 3vw;
 }
