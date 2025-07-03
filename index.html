@@ -175,7 +175,7 @@
                         <img src="./img/cow/01.jpeg" alt="">
                     </div>
                      <div>
-                        <button class="horror-button mt-3"><i class="fa-solid fa-phone-volume"></i>&nbsp;&nbsp;預約</button>
+                        <button class="horror-button mt-3 cowBtn"><i class="fa-solid fa-phone-volume"></i>&nbsp;&nbsp;預約</button>
                     </div>
                 </div>
             </div>
@@ -183,11 +183,11 @@
                 <div class="box cow">
                     <h4>遊戲特色</h4>
 
-                    <h6 class="text-center mt-3">🔴恐怖氛圍 🔴還原落後村莊 🔴真人演繹<br>
+                    <h6 class="text-center mt-3"><i class="fa-solid fa-circle-exclamation"></i>&nbsp;恐怖氛圍 <i class="fa-solid fa-circle-exclamation"></i>&nbsp;還原落後村莊 <i class="fa-solid fa-circle-exclamation"></i>&nbsp;真人演繹<br>
 
-                        🔴黑暗追逐 🔴謎題少量輕鬆 🔴單線任務挑戰極限
+                        <i class="fa-solid fa-circle-exclamation"></i>&nbsp;黑暗追逐 <i class="fa-solid fa-circle-exclamation"></i>&nbsp;謎題少量輕鬆 <i class="fa-solid fa-circle-exclamation"></i>&nbsp;單線任務挑戰極限
 
-                        🔴生命機制</h6>
+                        <i class="fa-solid fa-circle-exclamation"></i>&nbsp;生命機制</h6>
 
 
 
@@ -225,7 +225,11 @@
 
     <script>
         $(document).ready(function () {
+            const cowBtn=$('.cowBtn');
 
+            cowBtn.click(function(){
+                alert("此遊戲須滿18歲才能預約!!");
+            })
 
         });
     </script>
